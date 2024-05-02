@@ -5,7 +5,7 @@ import card1Icon from "src/assets/card1Icon.svg";
 import recent from "src/assets/recent.svg";
 import next from "src/assets/next.svg";
 import business from "src/assets/business-and-finance.svg";
-import { AccordionItemProps } from "src/Components/CardDetails/CardDetails.interface";
+import { AccordionItemProps } from "src/Components/CardDetails/CardDetails.interface.ts";
 import { transactions } from "src/constants";
 
 const AccordionItem: React.FC<AccordionItemProps> = ({
