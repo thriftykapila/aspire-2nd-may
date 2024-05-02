@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "src/Components/Carousel/carousel.module.css";
+import { useState } from "react";
+import styles from "./carousel.module.css";
 import Logo from "src/assets/Logo-2.svg";
 import Visa from "src/assets/VisaLogo.svg";
 import Eye from "src/assets/remove_red_eye-24px.svg";
@@ -7,14 +7,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "src/redux/store";
-import { getAccountData } from "src/redux/accountSelector";
-import { setSlide } from "src/redux/accountSlice";
-import { CardData } from "src/Components/CardCarousel/CardCarousel.interface";
+import { getAccountData } from "../../redux/accountSelector";
+import { setSlide } from "../../redux/accountSlice";
+import { CardData } from "./CardCarousel.interface";
 
 const CardCarousel: React.FC = () => {
   const dispatch = useDispatch();
-  const accountData = useSelector((state: RootState) => getAccountData(state));
+  const accountData = useSelector((state) => getAccountData(state));
 
   const handleSelect = (currentSlide: number) => {
     dispatch(setSlide(currentSlide));

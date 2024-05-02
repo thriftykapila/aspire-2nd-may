@@ -6,7 +6,7 @@ import Settings from "src/assets/Settings.svg";
 import fileStorage from "src/assets/file-storage.svg";
 import flights from "src/assets/flights.svg";
 import megaphone from "src/assets/megaphone.svg";
-import { Transaction } from "src/Components/CardDetails/CardDetails.interface";
+import { Transaction } from "./Components/CardDetails/CardDetails.interface";
 
 export const TAGLINE =
   "Trusted way of banking for 3,000+ SMEs and startups in Singapore";

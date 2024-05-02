@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import style from "src/Components/ActionTray/ActionTray.module.css";
+import { useState } from "react";
+import style from "./ActionTray.module.css";
 import FreezeCard from "src/assets/Freezecard.svg";
 import setSpent from "src/assets/SetLimit.svg";
 import GPay from "src/assets/GPay.svg";
 import Replace from "src/assets/Replacecard.svg";
 import Cancel from "src/assets/Deactivatecard.svg";
 import { Modal, Button } from "react-bootstrap";
-import { getAccountData, getAccountSlide } from "src/redux/accountSelector";
+import { getAccountData, getAccountSlide } from "../../redux/accountSelector";
 import { useDispatch, useSelector } from "react-redux";
-import { handleDeleteCard, handleFreezeCard } from "src/redux/accountSlice";
+import { handleDeleteCard, handleFreezeCard } from "../../redux/accountSlice";
 
 const ActionTray = () => {
   const dispatch = useDispatch();
@@ -18,8 +18,8 @@ const ActionTray = () => {
 
   const [show, setShow] = useState<boolean>(false);
 
-  const handleClose = () => setShow<boolean>(false);
-  const handleShow = () => setShow<boolean>(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const freezeCard = () => {
     dispatch(handleFreezeCard());
   };

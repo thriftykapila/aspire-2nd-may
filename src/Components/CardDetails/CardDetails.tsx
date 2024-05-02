@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import style from "src/Components/CardDetails/CardDetails.module.css";
+import style from "./CardDetails.module.css";
 import downArrow from "src/assets/down-arrow.svg";
 import card1Icon from "src/assets/card1Icon.svg";
 import recent from "src/assets/recent.svg";
 import next from "src/assets/next.svg";
 import business from "src/assets/business-and-finance.svg";
-import { AccordionItemProps } from "src/Components/CardDetails/CardDetails.interface.ts";
-import { transactions } from "src/constants";
+import { AccordionItemProps } from "./CardDetails.interface.ts";
+import { transactions } from "../../constants.ts";
 
 const AccordionItem: React.FC<AccordionItemProps> = ({
   icon,

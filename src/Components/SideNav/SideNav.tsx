@@ -1,6 +1,6 @@
-import style from "src/Components/SideNav/SideNav.module.css";
-import aspireLogo from "src/assets/AspireLogo.svg";
-import { TAGLINE, linksData } from "src/constants";
+import style from "./SideNav.module.css";
+import aspireLogo from "../../assets/AspireLogo.svg";
+import { TAGLINE, linksData } from "../../constants";
 
 const SideNav = () => {
   return (

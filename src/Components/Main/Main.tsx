@@ -1,8 +1,8 @@
-import style from "src/Components/Main/Main.module.css";
-import Header from "src/Components/Header/Header";
-import CardCarousel from "src/Components/Carousel/CardCarousel";
-import ActionTray from "src/Components/ActionTray/ActionTray";
-import CardDetails from "src/Components/CardDetails/CardDetails";
+import style from "./Main.module.css";
+import Header from "../../Components/Header/Header";
+import CardCarousel from "../../Components/Carousel/CardCarousel";
+import ActionTray from "../../Components/ActionTray/ActionTray";
+import CardDetails from "../../Components/CardDetails/CardDetails";
 
 const Main = () => {
   return (

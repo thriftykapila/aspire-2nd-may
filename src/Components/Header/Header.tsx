@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import style from "src/Components/Header/Header.module.css";
-import { AVAILABLE_BALANCE, NEW_CARD } from "src/constants";
+import style from "./Header.module.css";
+import { AVAILABLE_BALANCE, NEW_CARD } from "../../constants";
 import plus from "src/assets/plus.svg";
 import { Modal, Button } from "react-bootstrap";
-import { generateRandom12DigitNumber, generateRandomMMYY } from "src/utils";
+import { generateRandom12DigitNumber, generateRandomMMYY } from "../../utils";
 import { useDispatch } from "react-redux";
-import { addCard } from "src/redux/accountSlice";
+import { addCard } from "../../redux/accountSlice";
 
 const Header: React.FC = () => {
   const dispatch = useDispatch();
